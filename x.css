@@ -1,0 +1,108 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+	
+}
+.b{
+	background-color: #00a3cc;
+    
+	width: 100%;
+}   
+span{
+	color: white;
+	font-size: 50px;
+	font-weight: 20px;
+	line-height: 100px;
+	padding: 0 50px;
+	text-shadow: 3px 3px black;
+	animation: text 3s 1;
+}
+@keyframes text{
+	0%{
+		color: black;
+	}
+}
+
+.c{
+	float: right;
+	margin-right: 20px;
+	margin-top: -90px;
+	
+}
+.d{    
+	display: inline-block;
+	line-height: 80px;
+	margin-right: 25px;
+}
+a:hover{
+	background-color: #00e6b8;
+	border-radius: 8px;
+	transition: 0.4s;
+}
+a{
+	color: black;
+	font-size: 200%;
+	margin: 10px;
+}
+.active {
+	background-color: #00e6b8;
+	border-radius: 8px;
+}
+label, #toggle{
+	float: right;
+	font-size: 70px;
+	display: none;
+}
+.jan{
+	clear: both;
+	background-color: lightgray;
+	margin-top: -35px;
+	padding: 100px;
+}
+.feb{
+	background-color: #fff;
+}
+.march{
+	text-align: center;
+	text-decoration:underline;
+}
+.april{
+	float: right;
+	margin-top: 15px;
+}
+
+
+@media only screen and (max-width: 500px){
+	.feb{
+		margin-right: -90px;
+		margin-left: -90px;
+	}
+	label{
+		display: block;
+		cursor: pointer;
+	}
+	.menu{
+		text-align: center;
+		width: 100;
+		display: none;
+	}
+	.menu a{
+		display: block;
+
+	}
+	
+	
+	
+	#toggle:checked+ .menu{
+		display: block;
+	}
+	.c{
+		margin-top: 90px;
+	}
+
+}
